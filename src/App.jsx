@@ -24,6 +24,15 @@ function App() {
             </Routes>
           </div>
         </main>
+
+        <footer className="bg-white text-center py-3 shadow-sm mt-auto border-top">
+          <div className="container text-muted">
+            <small className="fw-medium">
+              Built with <i className="bi bi-code-slash text-primary mx-1"></i> by Apurv
+            </small>
+          </div>
+        </footer>
+        
       </div>
     </Router>
   );

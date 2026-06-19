@@ -56,12 +56,12 @@ function Quiz() {
   return (
     <div className="card shadow-lg border-0 rounded-4">
       {/* Progress Bar Header */}
-      <div className="card-header bg-white border-0 pt-4 pb-0 px-4">
+      <div className="card-header bg-white border-0 pt-3 pb-0 px-3">
         <div className="d-flex justify-content-between text-muted small mb-2 fw-bold">
           <span>Question {currentIndex + 1} of 5</span>
           <span>{Math.round(progressPercentage)}% Completed</span>
         </div>
-        <div className="progress" style={{ height: '8px' }}>
+        <div className="progress" style={{ height: '6px' }}>
           <div className="progress-bar progress-bar-striped progress-bar-animated bg-primary" 
                role="progressbar" 
                style={{ width: `${progressPercentage}%` }}>
@@ -69,20 +69,20 @@ function Quiz() {
         </div>
       </div>
 
-      {/* Question Body */}
-      <div className="card-body p-4 p-md-5">
-        <h4 className="card-title fw-bold mb-4" style={{ lineHeight: '1.5' }}>
+      {/* Question Body - Compressed Padding & Spacing */}
+      <div className="card-body p-3 p-md-4">
+        <h5 className="card-title fw-bold mb-3" style={{ lineHeight: '1.4' }}>
           {currentQ.text}
-        </h4>
+        </h5>
         
-        <div className="d-grid gap-3">
+        <div className="d-grid gap-2"> {/* Reduced gap */}
           {currentQ.options.map((option, index) => (
             <button 
-              key={index} 
-              className="btn btn-outline-secondary text-start p-3 rounded-3 fs-6"
+              key={`${currentQ.id}-${index}`} 
+              className="btn btn-outline-secondary text-start p-2 rounded-3" /* Reduced padding */
               onClick={() => handleAnswer(option)}
             >
-              <span className="badge bg-light text-dark border me-3 px-2 py-1">
+              <span className="badge bg-light text-dark border me-2 px-2 py-1">
                 {String.fromCharCode(65 + index)}
               </span>
               {option}

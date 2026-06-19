@@ -6,7 +6,6 @@ function Welcome() {
   const navigate = useNavigate();
 
   return (
-    {/* Responsive padding: p-3 on mobile, p-5 on medium/desktop screens */}
     <div className="card shadow-lg border-0 rounded-4 text-center p-3 p-md-5">
       <div className="card-body p-2 p-md-3">
         
@@ -14,16 +13,14 @@ function Welcome() {
           src={javaLogo} 
           alt="Java Logo" 
           className="mb-2 mb-md-3" 
-          style={{ width: '60px', height: 'auto' }} /* Shrunk logo from 80px to 60px */
+          style={{ width: '60px', height: 'auto' }} 
         />
         
-        {/* Scaled down typography for mobile */}
         <h1 className="fs-2 fw-bold mb-2">Java Core Assessment</h1>
         <p className="text-muted mb-3 mb-md-4 fs-6">
           Test your Object-Oriented Programming skills. You will face 5 randomly selected questions.
         </p>
         
-        {/* Removed btn-lg to save vertical space */}
         <button 
           className="btn btn-primary px-4 py-2 rounded-pill shadow-sm" 
           onClick={() => navigate('/quiz')}

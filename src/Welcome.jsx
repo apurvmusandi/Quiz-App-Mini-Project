@@ -6,7 +6,7 @@ function Welcome() {
   const navigate = useNavigate();
 
   return (
-    <div className="card shadow-lg border-0 rounded-4 text-center p-3 p-md-5">
+    <div className="card shadow-lg border-0 rounded-4 text-center p-2 p-md-5">
       <div className="card-body p-2 p-md-3">
         
         <img 

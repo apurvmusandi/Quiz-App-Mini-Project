@@ -9,14 +9,18 @@ function Quiz() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch('http://localhost:5000/questions')
-      .then((res) => res.json())
-      .then((data) => {
-        const shuffled = data.sort(() => 0.5 - Math.random());
-        setQuestions(shuffled.slice(0, 5));
-        setLoading(false);
-      });
-  }, []);
+  // Fetching from the public folder instead of localhost
+  fetch('/db.json')
+    .then((res) => res.json())
+    .then((data) => {
+      // Because our json structure is { "questions": [...] }
+      // We must access data.questions before shuffling
+      const shuffled = data.questions.sort(() => 0.5 - Math.random());
+      setQuestions(shuffled.slice(0, 5));
+      setLoading(false);
+    })
+    .catch(err => console.error("Error loading questions:", err));
+}, []);
 
   const handleAnswer = (selectedOption) => {
     const currentQ = questions[currentIndex];

@@ -1,0 +1,19 @@
+{
+  "questions": [
+    { "id": 1, "text": "Which of the following is NOT a core feature of Java?", "options": ["Object-Oriented", "Use of pointers", "Portable", "Dynamic"], "answer": "Use of pointers" },
+    { "id": 2, "text": "What is the size of an 'int' variable in Java?", "options": ["8-bit", "16-bit", "32-bit", "64-bit"], "answer": "32-bit" },
+    { "id": 3, "text": "Which component is responsible for executing Java byte code?", "options": ["JDK", "JRE", "JVM", "JIT"], "answer": "JVM" },
+    { "id": 4, "text": "What is the root class of all classes in Java?", "options": ["String", "Object", "Class", "System"], "answer": "Object" },
+    { "id": 5, "text": "Which keyword is used to establish inheritance between classes?", "options": ["implements", "inherits", "extends", "super"], "answer": "extends" },
+    { "id": 6, "text": "What happens when you apply the 'final' keyword to a variable?", "options": ["It becomes a global variable", "Its value cannot be changed once assigned", "It can only be accessed within its class", "It is stored in the heap memory"], "answer": "Its value cannot be changed once assigned" },
+    { "id": 7, "text": "Which collection class is used to store key-value pairs?", "options": ["ArrayList", "HashSet", "LinkedList", "HashMap"], "answer": "HashMap" },
+    { "id": 8, "text": "What is the default value of a boolean variable in Java?", "options": ["true", "false", "0", "null"], "answer": "false" },
+    { "id": 9, "text": "Can you overload the main() method in a Java class?", "options": ["Yes", "No", "Only in abstract classes", "Only if it returns an int"], "answer": "Yes" },
+    { "id": 10, "text": "What is Encapsulation in OOP?", "options": ["Hiding implementation details", "Creating multiple forms of a method", "Wrapping code and data together into a single unit", "Creating a new class from an existing class"], "answer": "Wrapping code and data together into a single unit" },
+    { "id": 11, "text": "Which block is ALWAYS executed in a try-catch structure, regardless of whether an exception occurs?", "options": ["try", "catch", "throw", "finally"], "answer": "finally" },
+    { "id": 12, "text": "Which method must be invoked to begin the execution of a new Thread?", "options": ["run()", "start()", "init()", "execute()"], "answer": "start()" },
+    { "id": 13, "text": "What is the purpose of the 'transient' keyword?", "options": ["To mark a variable as thread-safe", "To prevent a variable from being serialized", "To make a variable accessible across packages", "To indicate a variable is temporary in memory"], "answer": "To prevent a variable from being serialized" },
+    { "id": 14, "text": "Which interface does java.util.Hashtable implement?", "options": ["List", "Set", "Map", "Collection"], "answer": "Map" },
+    { "id": 15, "text": "What type of exception is a NullPointerException?", "options": ["Checked Exception", "Unchecked (Runtime) Exception", "Compile-time Error", "System Error"], "answer": "Unchecked (Runtime) Exception" }
+  ]
+}

@@ -6,18 +6,20 @@ function Welcome() {
   const navigate = useNavigate();
 
   return (
-    <div className="card shadow-lg border-0 rounded-4 text-center p-4 p-md-5">
-      <div className="card-body p-2 p-md-3">
+    <div className="card shadow-lg border-0 rounded-4 text-center p-3 p-md-5">
+      {/* Reduced inner padding for mobile */}
+      <div className="card-body p-1 p-md-3">
         
         <img 
           src={javaLogo} 
           alt="Java Logo" 
-          className="mb-2 mb-md-3" 
-          style={{ width: '60px', height: 'auto' }} 
+          className="mb-2" 
+          style={{ width: '50px', height: 'auto' }} /* Shrunk to 50px */
         />
         
-        <h1 className="fs-2 fw-bold mb-2">Java Core Assessment</h1>
-        <p className="text-muted mb-3 mb-md-4 fs-6">
+        {/* Scaled down to fs-4 for mobile */}
+        <h1 className="fs-4 fs-md-2 fw-bold mb-2">Java Core Assessment</h1>
+        <p className="text-muted mb-3 fs-6 px-2" style={{ lineHeight: '1.3' }}>
           Test your Object-Oriented Programming skills. You will face 5 randomly selected questions.
         </p>
         

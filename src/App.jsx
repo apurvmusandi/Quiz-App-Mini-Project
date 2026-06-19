@@ -36,17 +36,24 @@ function App() {
             </small>
             
             {/* Social Icons Container */}
-            <div className="d-flex gap-3">
-              <a href="https://github.com/apurvmusandi" target="_blank" rel="noopener noreferrer" className="text-secondary text-decoration-none">
-                <i className="bi bi-github fs-5"></i>
-              </a>
-              <a href="https://linkedin.com/in/apurvmusandi" target="_blank" rel="noopener noreferrer" className="text-secondary text-decoration-none">
-                <i className="bi bi-linkedin fs-5"></i>
-              </a>
-              <a href="mailto:apurvmusandi.com" className="text-secondary text-decoration-none">
-                <i className="bi bi-envelope-at-fill fs-5"></i>
-              </a>
-            </div>
+<div className="d-flex gap-3 mt-1">
+  
+  {/* GitHub - Standard Black/Dark */}
+  <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+    <i className="bi bi-github fs-4 text-dark"></i>
+  </a>
+  
+  {/* LinkedIn - Official Brand Blue */}
+  <a href="https://linkedin.com/in/YOUR_LINKEDIN_USERNAME" target="_blank" rel="noopener noreferrer" className="text-decoration-none">
+    <i className="bi bi-linkedin fs-4" style={{ color: '#0a66c2' }}></i>
+  </a>
+  
+  {/* Email/Gmail - Official Brand Red */}
+  <a href="mailto:YOUR_EMAIL@example.com" className="text-decoration-none">
+    <i className="bi bi-envelope-at-fill fs-4" style={{ color: '#ea4335' }}></i>
+  </a>
+
+</div>
 
           </div>
         </footer>

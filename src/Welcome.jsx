@@ -1,29 +1,31 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-// Import your SVG file from the assets folder
 import javaLogo from './assets/java_logo.svg'; 
 
 function Welcome() {
   const navigate = useNavigate();
 
   return (
-    <div className="card shadow-lg border-0 rounded-4 text-center p-5">
-      <div className="card-body">
-        {/* Replace the Bootstrap Icon with your imported SVG */}
+    {/* Responsive padding: p-3 on mobile, p-5 on medium/desktop screens */}
+    <div className="card shadow-lg border-0 rounded-4 text-center p-3 p-md-5">
+      <div className="card-body p-2 p-md-3">
+        
         <img 
           src={javaLogo} 
           alt="Java Logo" 
-          className="mb-3" 
-          style={{ width: '180px', height: 'auto' }} 
+          className="mb-2 mb-md-3" 
+          style={{ width: '60px', height: 'auto' }} /* Shrunk logo from 80px to 60px */
         />
         
-        <h1 className="display-6 fw-bold mb-3">Java Core Assessment</h1>
-        <p className="text-muted mb-4 pb-2 fs-5">
+        {/* Scaled down typography for mobile */}
+        <h1 className="fs-2 fw-bold mb-2">Java Core Assessment</h1>
+        <p className="text-muted mb-3 mb-md-4 fs-6">
           Test your Object-Oriented Programming skills. You will face 5 randomly selected questions.
         </p>
         
+        {/* Removed btn-lg to save vertical space */}
         <button 
-          className="btn btn-primary btn-lg px-5 rounded-pill shadow-sm" 
+          className="btn btn-primary px-4 py-2 rounded-pill shadow-sm" 
           onClick={() => navigate('/quiz')}
         >
           Begin Assessment <i className="bi bi-arrow-right ms-2"></i>
